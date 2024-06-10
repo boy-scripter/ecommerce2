@@ -25,7 +25,9 @@
     "paths": {
           "@app/*" : ["app/*"],
           "@pages/*" : ["app/pages/*"],
-          "@components/*" : ["app/components/*"]
+          "@components/*" : ["app/components/*"],
+          "@images/*" : ["../public/images"],
+          "@layouts/*" : ["app/layouts/*"]
 
     },
     "baseUrl": "src"
