@@ -1,18 +1,17 @@
-import { Routes } from '@angular/router';
-import HomePage from '@pages/home/home.page';
+import { Route } from '@angular/router';
 import { IndexLayout } from '@layouts/index/index.layout';
-import singleProductPage from '@pages/singleProduct/singleProduct.page';
+import { UserLayout } from '@layouts/user/user.layout';
 
-export const routes: Routes = [
+export const routes: Route[] = [
     {
         path: '',
         component: IndexLayout,
-        children: [
-            {
-                path: 'home',
-                component: HomePage
-            }
-        ]
+        loadChildren: () => import('@layouts/index/index.routes').then(c => c.indexRoutes)
+    },
+    {
+        path: 'user',
+        component: UserLayout,
+        loadChildren: () => import('@layouts/user/user.routes').then(c => c.userRoutes)
     },
 
 ];

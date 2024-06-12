@@ -26,7 +26,7 @@
           "@app/*" : ["app/*"],
           "@pages/*" : ["app/pages/*"],
           "@components/*" : ["app/components/*"],
-          "@images/*" : ["../public/images"],
+          "@images/*" : ["assets/images*"],
           "@layouts/*" : ["app/layouts/*"]
 
     },

@@ -9,6 +9,6 @@ import { Component } from "@angular/core";
     imports : []
 })
 
-export default class singleProductPage{
+export  class singleProductPage{
 
 }
