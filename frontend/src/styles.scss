@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
     .bg-blue {
         background-color: #0C1E31;
     }
@@ -18,6 +18,15 @@
 
     .color-pink {
         color: #EFD1C9;
+    }
+
+    @font-face {
+        font-family: poppins;
+        src: url('../public/font/poppins.ttf') format("truetype");
+    }
+
+    * {
+        font-family: poppins;
     }
 
 }
