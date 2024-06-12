@@ -4,11 +4,20 @@
 @tailwind utilities;
 
 @layer {
-    .bg-site {
+    .bg-blue {
         background-color: #0C1E31;
     }
 
-    .color-site {
+    .color-blue {
         color: #0C1E31;
     }
+
+    .bg-pink {
+        color: #EFD1C9;
+    }
+
+    .color-pink {
+        color: #EFD1C9;
+    }
+
 }
